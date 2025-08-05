@@ -1,67 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Everest Coffee Shop</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f1ee;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Everest Coffee Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+   
 
-        header {
-            background-color: #3e2723;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    
 
-        main {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
+    .about-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #fff8f0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        h1 {
-            color: #5d4037;
-        }
+    .about-container h2 {
+      color: #2c1a0e;
+      text-align: center;
+      margin-bottom: 25px;
+    }
 
-        p {
-            line-height: 1.6;
-        }
+    .about-intro {
+      text-align: center;
+      font-size: 18px;
+      color: #4e342e;
+      margin-bottom: 30px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #3e2723;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
+    .about-highlight {
+      font-weight: bold;
+      font-size: 20px;
+      color: #6f4e37;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .about-content {
+      font-size: 17px;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    /* 🟤 Our Core Values Box */
+    .values-box {
+      background-color: #f4e3d0;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .values-box h3 {
+      margin-top: 0;
+      color: #6f4e37;
+    }
+
+    .values-box ul {
+      padding-left: 20px;
+    }
+
+    .values-box li {
+      margin-bottom: 10px;
+    }
+
+    .values-box span {
+      font-weight: bold;
+      color: #4e342e;
+    }
+
+    /* 🖼️ Gallery Styling */
+    .gallery-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #fff8f0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-title {
+      text-align: center;
+      font-size: 24px;
+      color: #6f4e37;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-intro, .about-content, .values-box {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>EVEREST COFFEE SHOP &#9749;</h1>
+    <p>Your daily dose of happiness in a cup</p>
+  </header>
 
-    <header>
-        <h1>Everest Coffee Shop</h1>
-        <p>Where Every Cup Reaches New Heights</p>
-    </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <main>
-        <h2>About Us</h2>
-        <p>Welcome to Everest Coffee Shop, your cozy escape in the heart of the city. Inspired by the serene beauty and bold spirit of Mount Everest, we bring you a unique coffee experience that awakens your senses and warms your soul.</p>
-        
-        <p>Founded in 2025, Everest Coffee Shop is passionate about quality, sustainability, and community. We carefully source our beans from ethical farms, roast them with precision, and brew each cup with love. Whether you're here for your morning espresso, a peaceful work session, or a relaxing chat with friends, you'll always find a welcoming atmosphere and the rich aroma of freshly brewed coffee.</p>
-        
-        <p>Come, explore our menu, enjoy our space, and let your coffee journey begin at Everest.</p>
-    </main>
+  <!-- ✅ About Section -->
+  <div class="about-container">
+    <h2>About Us</h2>
 
-    <footer>
-        &copy; 2025 Everest Coffee Shop. All rights reserved.
-    </footer>
+    <div class="about-intro">
+     <p>Welcome to <strong>Everest Coffee Shop</strong> — your cozy escape in the heart of Jaffna.</p> 
+      Inspired by the strength of Mount Everest, our space blends warmth, community, and the finest coffee beans on earth.
+    </div>
 
-</body>
-</html>
+    
+
+    <div class="about-content">
+      <p>
+        At Everest, coffee is more than a drink — it’s a daily ritual. Our beans are ethically sourced from farms that value quality and fair trade. We roast with care, brew with love, and serve with a smile.
+      </p>
+      <p>
+        Whether you're fueling your morning, meeting friends, or just taking a mindful break, Everest Coffee offers the perfect setting. Our mission? To bring comfort, flavor, and friendliness in every cup.
+      </p>
+    </div>
+
+    <!-- ✅ Core Values Box -->
+    <div class="values-box">
+      <h3>Our Core Values</h3>
+      <ul>
+        <li><span>Quality:</span> Handpicked beans, carefully roasted, beautifully brewed</li>
+        <li><span>Sustainability:</span> Ethically sourced coffee and eco-friendly packaging</li>
+        <li><span>Community:</span> A welcoming space for conversation, creativity, and connection</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ✅ Photo Gallery -->
+  <div class="gallery-section">
+    <h2 class="gallery-title">Inside Everest Coffee ☕</h2>
+    <div class="gallery">
+      <img src=".//image/beans.jpg" alt="Coffee Shop Interior" />
+      <img src=".//image/coffee .jpg" alt="Barista at Work" />
+      <img src=".//image/coffee shop1.jpg" alt="Coffee with Pastry" />
+      <img src="https://images.

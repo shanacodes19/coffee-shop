@@ -1,88 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Everest Coffee Shop</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #fefefe;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Everest Coffee Shop</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    
 
-        header {
-            background-color: #3e2723;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    .section-box {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff8f0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        h1 {
-            margin: 0;
-        }
+    .contact-info, .contact-form {
+      font-size: 18px;
+      line-height: 1.8;
+    }
 
-        .contact-section {
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff8f0;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
+    .contact-info span {
+      font-weight: bold;
+      color: #4e342e;
+    }
 
-        .contact-info {
-            font-size: 18px;
-            line-height: 1.8;
-        }
+    .emoji {
+      margin-right: 8px;
+    }
 
-        .contact-info span {
-            font-weight: bold;
-            color: #4e342e;
-        }
+    .contact-form h2 {
+      text-align: center;
+      color: #6f4e37;
+    }
 
-        footer {
-            background-color: #3e2723;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
-        .emoji {
-            margin-right: 8px;
-        }
-    </style>
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #6f4e37;
+      color: white;
+      padding: 12px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    button:hover {
+      background-color: #5a3d2c;
+    }
+
+    .gallery-title {
+      text-align: center;
+      font-size: 24px;
+      color: #6f4e37;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      form {
+        width: 90%;
+      }
+
+      input, textarea {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>EVEREST COFFEE SHOP &#9749;</h1>
+    <p>Your daily dose of happiness in a cup</p>
+  </header>
 
-    <header>
-        <h1>📞 Contact Us</h1>
-        <p>We'd love to hear from you!</p>
-    </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <div class="contact-section">
-        <div class="contact-info">
-            <p><span class="emoji">🏠</span> <span>Address:</span><br>
-               No. 25, KKS Road, Nallur, Jaffna, Sri Lanka</p>
+  <!-- ✅ Contact Info -->
+  <div class="section-box contact-info">
+    <h2>Contact Us</h2>
+    <p><span class="emoji">🏠</span> <span>Address:</span><br>
+      No. 25, KKS Road, Nallur, Jaffna, Sri Lanka</p>
 
-            <p><span class="emoji">📱</span> <span>Phone:</span><br>
-               +94 77 123 4567</p>
+    <p><span class="emoji">📱</span> <span>Phone:</span><br>
+      +94 77 123 4567</p>
 
-            <p><span class="emoji">⏰</span> <span>Opening Hours:</span><br>
-               Monday - Saturday: 8:00 AM to 8:00 PM<br>
-               Sunday: Closed</p>
+    <p><span class="emoji">⏰</span> <span>Opening Hours:</span><br>
+      Monday - Saturday: 8:00 AM to 8:00 PM<br>
+      Sunday: Closed</p>
 
-            <p><span class="emoji">📧</span> <span>Email:</span><br>
-               info@everestcoffee.lk</p>
-        </div>
+    <p><span class="emoji">📧</span> <span>Email:</span><br>
+      info@everestcoffee.lk</p>
+  </div>
+
+  <!-- ✅ Contact Form -->
+  <div class="section-box contact-form">
+    <h2>Send Us a Message</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- ✅ Photo Gallery -->
+  <div class="section-box">
+    <h2 class="gallery-title">Our Coffee Moments ☕</h2>
+    <div class="gallery">
+      <img src=".//image/coffeecup.jpg" alt="Coffee Cup" />
+      <img src=".//image/Cafe Interior.jpg" alt="Cafe Interior" />
+      <img src=".//image/cup.jpg" alt="Coffee Beans" />
+      <img src=".//image/coffee bean.jpg" alt="Latte Art" />
     </div>
+  </div>
 
-    <footer>
-        &copy; 2025 Everest Coffee Shop – Jaffna 🇱🇰 | Come for the coffee, stay for the warmth ☕
-    </footer>
-
+  <footer>
+    &copy; 2025 Everest Coffee Shop – Jaffna 🇱🇰 | Come for the coffee, stay for the warmth ☕
+  </footer>
 </body>
 </html>
